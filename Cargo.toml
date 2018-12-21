@@ -1,0 +1,21 @@
+[package]
+name = "rust-4"
+version = "0.1.0"
+authors = ["Mexus <gilaldpellaeon@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1"
+futures-cpupool = "0.1.8"
+indexmap = "1.0.2"
+num_cpus = "1.9.0"
+rayon = "1.0.3"
+scoped_threadpool = "0.1.9"
+tokio-threadpool = "0.1.9"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "k-benchmark"
+harness = false
